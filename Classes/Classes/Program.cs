@@ -12,6 +12,7 @@ namespace Classes
         {
             Car myCar = new Car();
             myCar.Make = "some car";
+            myCar.Model = "shdjc";
             myCar.Year = 1992;
             myCar.Color = "Silver";
 
