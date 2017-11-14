@@ -14,7 +14,7 @@ Kindly contact your team lead, Khadeeja via Slack or mail(khadeeja@fantacode.com
 
 Happy Coding! :)
 
-###### Report : [Report_week1](http://TasksFantacode/Task1_Report_Liyana (1).docx)
+###### Report : [Report_week1](http://TasksFantacode/Task1_Report_Liyana.docx)
 
 
 
