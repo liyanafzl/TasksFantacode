@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ToDo"
+             x:Class="ToDo.MainPage"
+             BackgroundImage="greyback.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+    <StackLayout
+        Orientation="Vertical"
+        Margin="7">
+
+            <Label
+            Text="My To Do List"
+               
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+            />
+            <StackLayout
+            Orientation="Horizontal">
+                <Label Text="To Do : " TextColor="Gray" FontSize="20"></Label>
+                    <Entry x:Name="item1" Placeholder="Enter the task" WidthRequest="150"></Entry>
+                
+        </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="To Do : " TextColor="Gray" FontSize="20"></Label>
+                    <Entry x:Name="item2" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="To Do : " TextColor="Gray" FontSize="20"></Label>
+                    <Entry x:Name="item3" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="To Do : " TextColor="Gray" FontSize="20"></Label>
+                    <Entry x:Name="item4" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="To Do : " TextColor="Gray" FontSize="20"></Label>
+                    <Entry x:Name="item5" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="To Do : " TextColor="Gray" FontSize="20"></Label>
+                    <Entry x:Name="item6" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+
+
+                
+
+            <StackLayout Orientation="Horizontal">
+                <Button BackgroundColor="Gray" TextColor="White" Text="Save" Clicked="OnSave"/>
+                <Button BackgroundColor="Maroon" TextColor="White" Text="View" Clicked="OnView"/>
+            </StackLayout>
+        </StackLayout>
+            <ListView x:Name="listview">
+               
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+
+</ContentPage>

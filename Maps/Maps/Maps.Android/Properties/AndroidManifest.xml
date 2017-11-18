@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Maps">
+	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="Maps.Android">
+    <activity
+            android:name=".mapsWithMarker"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDxVNwLGpku-siH7_Q2XQ7pZzEVmS-YcLE"/>
+  </application>
+</manifest>

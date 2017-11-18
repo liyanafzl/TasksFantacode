@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyProfile"
+             x:Class="MyProfile.MainPage"
+             BackgroundImage="orange.jpg"
+            >
+    <StackLayout Orientation="Vertical">
+        <StackLayout>
+
+            <Image
+                 Source="add_photo.png"
+            Margin="80"
+            HeightRequest="200"
+            WidthRequest="200"
+           />
+        </StackLayout>
+        <StackLayout
+      Orientation="Horizontal"
+            WidthRequest="300">
+            <Label Text=" Name"
+                  FontSize="20"
+                   WidthRequest="100">
+            </Label>
+            <Entry x:Name="n" Placeholder="Enter your name" WidthRequest="200"/>
+        </StackLayout>
+        <StackLayout
+      Orientation="Horizontal" >
+            <Label Text=" Email"
+                  FontSize="20"
+                   WidthRequest="100">
+            </Label>
+            <Entry Placeholder="Enter your email address" WidthRequest="200"/>
+        </StackLayout>
+        <StackLayout
+      Orientation="Horizontal" >
+                <Label Text=" LinkedIn"
+                  FontSize="20"
+                       WidthRequest="100">
+                </Label>
+                <Entry Placeholder="Enter your link" WidthRequest="200"/>
+
+            </StackLayout>
+            
+        <Button Text="SUBMIT" BackgroundColor="Black" TextColor="White" HorizontalOptions="Center" Clicked="onSubmit"/>
+    </StackLayout>
+    
+
+</ContentPage>
