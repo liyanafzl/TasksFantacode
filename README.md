@@ -11,7 +11,8 @@ Reference:  https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-
 At the end of this week, we expect you to develop console application based on C#. The theme will be given individually.
 
 
-###### Report : [Report_week1](http://TasksFantacode/blob/master/Report_week1.md)
+###### Report : 
+[Report_week1](https://github.com/liyanafzl/TasksFantacode/tree/master/Report_week1.md)
 
 ### Task 2
 
