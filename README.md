@@ -11,7 +11,7 @@ Reference:  https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-
 At the end of this week, we expect you to develop console application based on C#. The theme will be given individually.
 
 
-###### My Report : [Report_week1](https://github.com/liyanafzl/TasksFantacode/tree/master/Report_week1.md)
+###### My Report : [Report_week1](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week1.md)
 
 ### Task 2
 
@@ -25,7 +25,7 @@ The task for the second week of Internship is:
   1. UI Properties – https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=F1SAD-rQ-4o
 At the end of this week, we expect you to develop a single page Android and iOS application based on Xamarin Forms.
 
-###### My Report : [Report_week2](https://github.com/liyanafzl/TasksFantacode/tree/master/Report_week2.md)
+###### My Report : [Report_week2](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week2.md)
 
 
 ### Task 3
