@@ -25,3 +25,14 @@ Label, Buttons and Entries - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2
 UI Properties – https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=F1SAD-rQ-4o
 At the end of this week, we expect you to develop a single page Android and iOS application based on Xamarin Forms.
 
+
+### Task 3
+
+The resource for this week is :
+
+Navigation - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=vlLdF7zALy
+Passing Parameter to a Page - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=tlEn9ywoRGY
+Tabbed Page - i) https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=bT1JeVLsVig
+                              ii) https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=xqF4G2kGFHI
+
+At the end of this week, we expect you to develop a two-page application which pass parameters from one page to other.
