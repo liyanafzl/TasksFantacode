@@ -10,13 +10,8 @@ C# for Absolute Beginner.
 Reference:  https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949
 At the end of this week, we expect you to develop console application based on C#. The theme will be given individually.
 
-Kindly contact your team lead, Khadeeja via Slack or mail(khadeeja@fantacode.com) for the individual theme when you're ready.
-
-Happy Coding! :)
 
 ###### Report : [Report_week1](http://liyanafzl/TasksFantacode/Task1_Report_Liyana.docx)
-
-
 
 ### Task 2
 
