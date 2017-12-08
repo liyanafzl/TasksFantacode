@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Week3App"
+             x:Class="Week3App.MainPage"
+             Title="Performance">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label  />
+
+            </StackLayout>
+           
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Subject 1" WidthRequest="90" FontSize="Medium"/>
+                <Entry x:Name="subject1" Placeholder="Enter the marks (max 50 )"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Subject 2" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="subject2" Placeholder="Enter the marks (max 50)"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Subject 3" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="subject3" Placeholder="Enter the marks (max 50)"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Subject 4" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="subject4" Placeholder="Enter the marks (max 50)"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Subject 5" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="subject5" Placeholder="Enter the marks (max 50 )"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Subject 6" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="subject6" Placeholder="Enter the marks (max 50 )"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Lab 1" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="lab1" Placeholder="Enter the marks (max 50 )"/>
+            </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="5">
+                <Label Text="Lab 2" WidthRequest="90" FontSize="Medium"/>
+                        <Entry x:Name="lab2" Placeholder="Enter the marks (max 50 )"/>
+            </StackLayout>
+            
+            <Button x:Name="calculate" Text="CALCULATE" HorizontalOptions="Center" Clicked="calculate_Clicked" />
+
+            <!--<ListView x:Name="MainListView"/> 
+            <Button Text="Navigate to Second page"
+                    Clicked="Button_Clicked"/>-->
+
+        </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
