@@ -1,6 +1,6 @@
 # TasksFantacode
 
-This is a repository dedicated solely to publish the tasks completed each week at FantaCode LLP Solutions.
+This is a repository dedicated solely to publish the tasks completed each week at FantaCode LLP Solutions during the internship program from 4th November 2017 to 4th May 2018.
 
 ### Task 1
 
