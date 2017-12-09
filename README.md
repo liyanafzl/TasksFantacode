@@ -6,8 +6,8 @@ This is a repository dedicated solely to publish the tasks completed each week a
 
 The task for the first week of your Internship is here.
 
-C# for Absolute Beginner.
-Reference:  https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949
+C# for Absolute Beginner.<br>
+Reference:  https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949<br>
 At the end of this week, we expect you to develop console application based on C#. The theme will be given individually.
 
 
@@ -38,3 +38,26 @@ The resource for this week is :
                               ii) https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=xqF4G2kGFHI
 
 At the end of this week, we expect you to develop a two-page application which pass parameters from one page to other.
+
+### Task 4
+
+
+The task for the next week is here:
+
+1. List View - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=xqF4G2kGFHI
+1. List View Item Template - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=xqF4G2kGFHI
+1. ListView Styling - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=N0e3fPisIw8<br>
+At the end of this week, we expect you to develop a multipage application with ListView and a detailed page. Preferably a simple To-Do app without any storage.
+
+
+### Task 5
+
+The task for the next week is here:
+
+* Xamarin Forms Styles & Introduction to MVVM in Xamarin Forms
+1. Xamarin Forms Styles - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=yaC0-C942wk
+1. MVVM DataBinding - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=uEn9FlLL5wo
+1. MVVM Commands - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=wmOrD7AcdCY
+ <br>
+Convert the To-Do app you created on Week 4 to MVVM pattern.
+
