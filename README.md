@@ -39,6 +39,8 @@ The resource for this week is :
 
 At the end of this week, we expect you to develop a two-page application which pass parameters from one page to other.
 
+###### My Report : [Report_week3](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week3.md)
+
 ### Task 4
 
 
