@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App_week4"
+             x:Class="App_week4.MainPage"
+             Title="To Do List"
+             BackgroundColor="Goldenrod">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Padding="30">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="To Do" WidthRequest="90"
+                           FontSize="Medium"></Label>
+                    <Entry x:Name="taskentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Status" WidthRequest="90" FontSize="Medium"></Label>
+                    <Entry x:Name="statusentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Due Date" WidthRequest="90" FontSize="Medium"></Label>
+                    <Entry x:Name="dateentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Priority" WidthRequest="90" FontSize="Medium"></Label>
+                    <Entry x:Name="priorityentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Notes" WidthRequest="90" FontSize="Medium"></Label>
+                    <Editor x:Name="notesentry" HeightRequest="50"></Editor>
+                </StackLayout>
+                <Button Text="Add to List" Clicked="Button_Clicked" BackgroundColor="Yellow">
+
+                </Button>
+                <Button Text="View My To Do List" Clicked="View_Clicked" BackgroundColor="Maroon">
+
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content> 
+</ContentPage>
