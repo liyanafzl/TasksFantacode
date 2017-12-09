@@ -9,11 +9,27 @@
                     <StackLayout Orientation="Vertical" Padding="30">
                         <Grid BackgroundColor="LightYellow" HeightRequest="190" >
                             <StackLayout Orientation="Vertical" Padding="20" BackgroundColor="PaleGoldenrod"  >
-                                <Label Text="{Binding task}"/>
-                                <Label Text="{Binding status}"/>
-                                <Label Text="{Binding duedate}"/>
-                                <Label Text="{Binding priority}"/>
-                                <Label Text="{Binding notes}" />
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Task" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding task}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                   <Label Text="Status" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding status}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Due date" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding duedate}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Priority" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding priority}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Notes" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding notes}"/>
+                                </StackLayout>
+                                
 
                             </StackLayout>
                         </Grid>

@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:App_week4"
              x:Class="App_week4.MainPage"
              Title="To Do List"
-             BackgroundColor="Goldenrod">
+             BackgroundColor="LemonChiffon">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" Padding="30">
@@ -32,7 +32,7 @@
                 <Button Text="Add to List" Clicked="Button_Clicked" BackgroundColor="Yellow">
 
                 </Button>
-                <Button Text="View My To Do List" Clicked="View_Clicked" BackgroundColor="Maroon">
+                <Button Text="View My To Do List" Clicked="View_Clicked" BackgroundColor="Turquoise">
 
                 </Button>
             </StackLayout>
