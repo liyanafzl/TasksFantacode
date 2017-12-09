@@ -23,4 +23,4 @@ https://github.com/liyanafzl/TasksFantacode/tree/master/App_week4
 	<br>It happens when the below line is not included:
 	MainPage = new NavigationPage( new App_week4.MainPage());
 	<br>[Here I was trying to navigate from MainPage to another page ListPage]
-* Exceptions can occur when the DataTemplate,Grid,ViewCell,ItemTemplate in the xam page are not used as per the requirements.
+* Exceptions can occur when the DataTemplate,Grid,ViewCell,ItemTemplate in the xaml page are not used as per the requirements.
