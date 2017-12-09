@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App_Week3"
+             x:Class="App_Week3.MainPage"
+             Title="Performance"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Margin="5">
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Subject 1" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="sub1" PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Subject 2" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="sub2" PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Subject 3" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="sub3" PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Subject 4" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="sub4"  PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Subject 5" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="sub5"  PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Subject 6" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="sub6"  PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Lab 1" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="lab1"  PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <StackLayout Margin="5"  Orientation="Horizontal">
+                    <Label Text="Lab 2" WidthRequest="90" FontSize="Medium" TextColor="White"></Label>
+                    <Entry x:Name="lab2"  PlaceholderColor="Silver" TextColor="White" Placeholder="Enter your marks (max. 50)"></Entry>
+                </StackLayout>
+                <Button Text="Calculate %" HorizontalOptions="Center" Margin="5" Clicked="calculate_onClicked"></Button>
+            
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
