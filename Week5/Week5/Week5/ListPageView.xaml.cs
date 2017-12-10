@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Week5.Models;
 
-namespace App_week4
+namespace Week5
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ListPage : ContentPage
+	public partial class ListPageView : ContentPage
 	{
-		public ListPage (List<Task> list)
-		{
-			InitializeComponent ();
+		public ListPageView (List<TaskModel> list)
+
+        {
+            InitializeComponent();
             ToDoList.ItemsSource = list;
-           
-		}
-	}
+
+        }
+    }
 }

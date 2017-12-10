@@ -17,7 +17,6 @@ namespace App_week4
 
         }
         public List<Task> tasks = new List<Task>();
-        public int i = 0;
         private void Button_Clicked(object sender, EventArgs e)
         {
             //tasks = new List<Task>();
@@ -28,11 +27,11 @@ namespace App_week4
             newtask.duedate = dateentry.Text;
             newtask.notes = notesentry.Text;
             tasks.Add(newtask);
-            i += 1;
+            
         }
         public async void View_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListPage(tasks,i));
+            await Navigation.PushAsync(new ListPage(tasks));
         }
     }
     

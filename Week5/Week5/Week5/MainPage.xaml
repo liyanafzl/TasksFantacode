@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Week5"
+             xmlns:viewModels="clr-namespace:Week5.ViewModels"
+             x:Class="Week5.MainPage"
+             BackgroundColor="Aquamarine">
+    <ContentPage.BindingContext>
+        <viewModels:TaskViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="customlabel"
+                   TargetType="Label">
+                <Setter Property="WidthRequest"
+                        Value="90"/>
+                <Setter Property="FontSize"
+                        Value="Medium"/>
+                <Setter Property="TextColor"
+                        Value="black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Padding="30">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="To Do" 
+                           Style="{StaticResource customlabel}"></Label>
+                    <Entry x:Name="taskentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Status" Style="{StaticResource customlabel}"></Label>
+                    <Entry Text="{Binding taskmodel.task}" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Due Date" Style="{StaticResource customlabel}"></Label>
+                    <Entry x:Name="dateentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Priority" Style="{StaticResource customlabel}"></Label>
+                    <Entry x:Name="priorityentry" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Notes" Style="{StaticResource customlabel}"></Label>
+                    <Editor x:Name="notesentry" HeightRequest="50"></Editor>
+                </StackLayout>
+                <Button Text="Add to List"  BackgroundColor="Yellow"  Command="{Binding addtolist}">
+
+                </Button>
+                <Button Text="View My To Do List"  BackgroundColor="Fuchsia" Command="{Binding viewlist}">
+
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
