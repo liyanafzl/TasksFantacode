@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Week5.Models;
+using Week5.ViewModels;
 
 namespace Week5
 {
@@ -17,7 +18,7 @@ namespace Week5
 
         {
             InitializeComponent();
-            ToDoList.ItemsSource = list;
+            BindingContext = new ListViewModel(list);
 
         }
     }

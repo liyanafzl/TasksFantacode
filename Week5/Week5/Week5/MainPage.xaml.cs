@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Week5.Models;
+using Week5.ViewModels;
 
 namespace Week5
 {
@@ -13,9 +14,9 @@ namespace Week5
 		public MainPage()
 		{
 			InitializeComponent();
-           
+            BindingContext = new TaskViewModel(Navigation);
         }
-        public List<TaskModel> tasks = new List<TaskModel>();
+        //public List<TaskModel> tasks = new List<TaskModel>();
         //private void Button_Clicked(object sender, EventArgs e)
         //{
         //    //tasks = new List<Task>();

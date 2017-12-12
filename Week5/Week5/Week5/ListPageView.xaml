@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:viewModel="clr-namespace:Week5.ViewModels"
              x:Class="Week5.ListPageView">
-    <ListView x:Name="ToDoList" HasUnevenRows="True">
+    <ContentPage.BindingContext>
+        <viewModel:ListViewModel/>
+    </ContentPage.BindingContext>
+    <ListView HasUnevenRows="True" ItemsSource="{Binding tasks}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
