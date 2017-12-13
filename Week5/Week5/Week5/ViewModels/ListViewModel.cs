@@ -7,7 +7,18 @@ namespace Week5.ViewModels
 {
     class ListViewModel
     {
-        public List<TaskModel> tasks = new List<TaskModel>();
+        private List<TaskModel> _tasks = new List<TaskModel>();
+        public List<TaskModel> tasks {
+            get
+            {
+                return _tasks;
+            }
+            set
+            {
+                _tasks = value;
+
+            }
+        }
         public ListViewModel(List<TaskModel> list)
         {
             this.tasks = list;

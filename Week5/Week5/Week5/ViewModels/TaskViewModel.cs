@@ -17,14 +17,7 @@ namespace Week5.ViewModels
         public INavigation Navigation { get; set; }
         public TaskViewModel(INavigation navigation)
         {
-            //taskmodel = new TaskModel
-            //{
-            //    task = taskmodel.task,
-            //    status = taskmodel.status,
-            //    priority = taskmodel.priority,
-            //    duedate = taskmodel.duedate,
-            //    notes = taskmodel.notes
-            //};
+            
             this.Navigation = navigation;
             this.viewlist = new Command(async () => await GotoPage2());
             addtolist = new Command(() =>
