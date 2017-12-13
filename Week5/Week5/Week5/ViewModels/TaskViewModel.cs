@@ -10,7 +10,7 @@ namespace Week5.ViewModels
 {
     public class TaskViewModel
     {
-        public TaskModel taskmodel;
+        public TaskModel taskmodel { get; set; }
         public List<TaskModel> tasks = new List<TaskModel>();
         public ICommand addtolist { set; get; }
         public ICommand viewlist { set; get; }
