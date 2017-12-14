@@ -1,28 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Week5.Models;
+﻿//using system;
+//using system.collections.generic;
+//using system.text;
+//using week5.models;
 
-namespace Week5.ViewModels
-{
-    class ListViewModel
-    {
-        private List<TaskModel> _tasks = new List<TaskModel>();
-        public List<TaskModel> tasks {
-            get
-            {
-                return _tasks;
-            }
-            set
-            {
-                _tasks = value;
+//namespace week5.viewmodels
+//{
+//    class listviewmodel
+//    {
+//        private list<taskmodel> _tasks = new list<taskmodel>();
+//        public list<taskmodel> tasks
+//        {
+//            get
+//            {
+//                return _tasks;
+//            }
+//            set
+//            {
+//                _tasks = value;
 
-            }
-        }
-        public ListViewModel(List<TaskModel> list)
-        {
-            this.tasks = list;
-        }
+//            }
+//        }
+//        public listviewmodel(list<taskmodel> list)
+//        {
+//            this.tasks = list;
+//        }
 
-    }
-}
+//    }
+//}

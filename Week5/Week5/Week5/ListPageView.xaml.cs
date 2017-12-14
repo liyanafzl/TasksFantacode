@@ -11,14 +11,15 @@ using Week5.ViewModels;
 
 namespace Week5
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ListPageView : ContentPage
-	{
-		public ListPageView (List<TaskModel> list)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ListPageView : ContentPage
+    {
+        public ListPageView()
 
         {
             InitializeComponent();
-            BindingContext = new ListViewModel(list);
+            BindingContext = new TaskViewModel(Navigation);
+
 
         }
     }

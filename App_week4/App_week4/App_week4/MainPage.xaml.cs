@@ -19,7 +19,6 @@ namespace App_week4
         public List<Task> tasks = new List<Task>();
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //tasks = new List<Task>();
             Task newtask = new Task();
             newtask.task = taskentry.Text;
             newtask.status = statusentry.Text;
