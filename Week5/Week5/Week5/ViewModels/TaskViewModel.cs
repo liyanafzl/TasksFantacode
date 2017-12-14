@@ -9,7 +9,7 @@ using System.Windows.Input;
 using System.Threading.Tasks;
 
 using System.ComponentModel;
-using Android.Content.Res;
+using System.Collections.ObjectModel;
 
 namespace Week5.ViewModels
 {
@@ -19,7 +19,18 @@ namespace Week5.ViewModels
         private string _message;
         public INavigation Navigation { get; set; }
         public ICommand viewlist { set; get; }
-        List<TaskModel> list = new List<TaskModel>();
+        private ObservableCollection<TaskModel> _list;//new List<TaskModel>();
+        public ObservableCollection<TaskModel> List
+        {
+            get
+            {
+                return _list;
+            }
+            set
+            {
+                _list = value;
+            }
+        }
         public TaskModel taskmodel
         {
             get
@@ -43,6 +54,10 @@ namespace Week5.ViewModels
                 notes = "",
                 priority = ""
             };
+            List = new ObservableCollection<TaskModel>()
+            {
+                
+            };
             this.Navigation = navigation;
             this.viewlist = new Command(async () => await GotoPage2());
         }
@@ -64,7 +79,7 @@ namespace Week5.ViewModels
             {
                 return new Command(() =>
                 {
-                list.Add(taskmodel);
+                List.Add(taskmodel);
                 message = "The task is " + taskmodel.task + " for date " + taskmodel.duedate + "priority" + taskmodel.priority + " status " + taskmodel.status;
 
                 });
