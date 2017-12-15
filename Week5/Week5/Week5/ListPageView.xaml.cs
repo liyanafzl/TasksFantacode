@@ -8,17 +8,19 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Week5.Models;
 using Week5.ViewModels;
+using System.Collections.ObjectModel;
+using week5.viewmodels;
 
 namespace Week5
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListPageView : ContentPage
     {
-        public ListPageView()
+        public ListPageView(ObservableCollection<TaskModel> List)
 
         {
             InitializeComponent();
-            BindingContext = new TaskViewModel(Navigation);
+            BindingContext = new ListViewModel(List);
 
 
         }

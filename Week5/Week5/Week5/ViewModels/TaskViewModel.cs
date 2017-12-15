@@ -19,6 +19,7 @@ namespace Week5.ViewModels
         private string _message;
         public INavigation Navigation { get; set; }
         public ICommand viewlist { set; get; }
+        public ICommand addtolist { get; set; }
         private ObservableCollection<TaskModel> _list;//new List<TaskModel>();
         public ObservableCollection<TaskModel> List
         {
@@ -60,8 +61,14 @@ namespace Week5.ViewModels
             };
             this.Navigation = navigation;
             this.viewlist = new Command(async () => await GotoPage2());
+            this.addtolist = new Command(() => {
+                List.Add(taskmodel);
+                message = "The task is " + taskmodel.task + " for date " + taskmodel.duedate + "priority" + taskmodel.priority + " status " + taskmodel.status;
+
+            });
         }
-        
+
+
         public string message
         {
             get
@@ -73,25 +80,25 @@ namespace Week5.ViewModels
                 OnPropertyChanged();
             }
         }
-        public Command addtolist
-        {
-            get
-            {
-                return new Command(() =>
-                {
-                List.Add(taskmodel);
-                message = "The task is " + taskmodel.task + " for date " + taskmodel.duedate + "priority" + taskmodel.priority + " status " + taskmodel.status;
+        //public Command addtolist
+        //{
+        //    get
+        //    {
+        //        return new Command(() =>
+        //        {
+        //        List.Add(taskmodel);
+        //        message = "The task is " + taskmodel.task + " for date " + taskmodel.duedate + "priority" + taskmodel.priority + " status " + taskmodel.status;
 
-                });
-            }
+        //        });
+        //    }
 
-        }
+        //}
         
 
         public async Task GotoPage2()
         {
             /////
-            await Navigation.PushAsync(new ListPageView());
+            await Navigation.PushAsync(new ListPageView(List));
         }
 
 
