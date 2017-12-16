@@ -49,7 +49,7 @@
                 <Button Text="Add to List"  BackgroundColor="Gray" Command="{Binding addtolist}">
 
                 </Button>
-                <Button Text="View My To Do List"  BackgroundColor="Black" Command="{Binding viewlist}"><!--Binding DataContext.ChangePage-->
+                <Button Text="View My To Do List"  BackgroundColor="LightGray" Command="{Binding viewlist}"><!--Binding DataContext.ChangePage-->
 
                 </Button>
 
