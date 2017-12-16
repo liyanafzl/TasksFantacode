@@ -16,7 +16,7 @@ namespace Week5
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListPageView : ContentPage
     {
-        public ListPageView(ObservableCollection<TaskModel> List)
+        public ListPageView(List<TaskModel> List)
 
         {
             InitializeComponent();

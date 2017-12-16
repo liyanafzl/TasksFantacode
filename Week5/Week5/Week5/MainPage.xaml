@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Week5.MainPage"
-             BackgroundColor="Aquamarine">
+             BackgroundColor="WhiteSmoke">
     <!--xmlns:viewModels="clr-namespace:Week5.ViewModels"-->
     <!--xmlns:local="clr-namespace:Week5"-->
     <!--<ContentPage.BindingContext>
@@ -28,7 +28,7 @@
                 <StackLayout Orientation="Horizontal">
                     <Label Text="To Do" 
                            Style="{StaticResource customlabel}"></Label>
-                    <Entry Text="{Binding taskmodel.task, Mode=TwoWay}" WidthRequest="200"></Entry>
+                    <Entry Text="{Binding taskmodel.task}" WidthRequest="200"></Entry>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Status" Style="{StaticResource customlabel}"></Label>
@@ -46,10 +46,10 @@
                     <Label Text="Notes" Style="{StaticResource customlabel}"></Label>
                     <Editor Text="{Binding taskmodel.notes, Mode=TwoWay}" HeightRequest="50"></Editor>
                 </StackLayout>
-                <Button Text="Add to List"  BackgroundColor="Yellow" Command="{Binding addtolist}">
+                <Button Text="Add to List"  BackgroundColor="Gray" Command="{Binding addtolist}">
 
                 </Button>
-                <Button Text="View My To Do List"  BackgroundColor="Fuchsia" Command="{Binding viewlist}"><!--Binding DataContext.ChangePage-->
+                <Button Text="View My To Do List"  BackgroundColor="Black" Command="{Binding viewlist}"><!--Binding DataContext.ChangePage-->
 
                 </Button>
 

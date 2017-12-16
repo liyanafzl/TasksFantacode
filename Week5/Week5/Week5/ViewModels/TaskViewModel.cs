@@ -20,8 +20,8 @@ namespace Week5.ViewModels
         public INavigation Navigation { get; set; }
         public ICommand viewlist { set; get; }
         public ICommand addtolist { get; set; }
-        private ObservableCollection<TaskModel> _list;//new List<TaskModel>();
-        public ObservableCollection<TaskModel> List
+        private List<TaskModel> _list;
+        public List<TaskModel> List
         {
             get
             {
@@ -55,15 +55,15 @@ namespace Week5.ViewModels
                 notes = "",
                 priority = ""
             };
-            List = new ObservableCollection<TaskModel>()
+            List = new List<TaskModel>()
             {
-                
+
             };
             this.Navigation = navigation;
             this.viewlist = new Command(async () => await GotoPage2());
             this.addtolist = new Command(() => {
-                List.Add(taskmodel);
-                message = "The task is " + taskmodel.task + " for date " + taskmodel.duedate + "priority" + taskmodel.priority + " status " + taskmodel.status;
+               List.Add(taskmodel);
+                message = "The task is " + taskmodel.task + " for date " + taskmodel.duedate + " priority " + taskmodel.priority + " status " + taskmodel.status;
 
             });
         }

@@ -8,8 +8,8 @@ namespace week5.viewmodels
 {
     class ListViewModel
     {
-        private ObservableCollection<TaskModel> _list;
-        public ObservableCollection<TaskModel> List
+        private List<TaskModel> _list;
+        public List<TaskModel> List
         {
             get
             {
@@ -20,11 +20,12 @@ namespace week5.viewmodels
                 _list = value;
             }
         }
-        public ListViewModel(ObservableCollection<TaskModel> List)
+        public ListViewModel(List<TaskModel> List)
         {
             this.List = List;
         }
           
+
         //private list<taskmodel> _tasks = new list<taskmodel>();
         //public list<taskmodel> tasks
         //{
