@@ -1,7 +1,0 @@
-c:\users\liyana fizal\source\repos\Stack\Stack\obj\Debug\Stack.csprojResolveAssemblyReference.cache
-c:\users\liyana fizal\source\repos\Stack\Stack\obj\Debug\Stack.csproj.CoreCompileInputs.cache
-c:\users\liyana fizal\source\repos\Stack\Stack\bin\Debug\Stack.exe.config
-c:\users\liyana fizal\source\repos\Stack\Stack\bin\Debug\Stack.exe
-c:\users\liyana fizal\source\repos\Stack\Stack\bin\Debug\Stack.pdb
-c:\users\liyana fizal\source\repos\Stack\Stack\obj\Debug\Stack.exe
-c:\users\liyana fizal\source\repos\Stack\Stack\obj\Debug\Stack.pdb

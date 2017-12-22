@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week5.MainPage"
+             BackgroundColor="WhiteSmoke">
+    <!--xmlns:viewModels="clr-namespace:Week5.ViewModels"-->
+    <!--xmlns:local="clr-namespace:Week5"-->
+    <!--<ContentPage.BindingContext>
+        <viewModels:TaskViewModel/>
+    </ContentPage.BindingContext>-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="customlabel"
+                   TargetType="Label">
+                <Setter Property="WidthRequest"
+                        Value="90"/>
+                <Setter Property="FontSize"
+                        Value="Medium"/>
+                <Setter Property="TextColor"
+                        Value="black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Padding="30">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="To Do" 
+                           Style="{StaticResource customlabel}"></Label>
+                    <Entry Text="{Binding taskmodel.task}" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Status" Style="{StaticResource customlabel}"></Label>
+                    <Entry Text="{Binding taskmodel.status, Mode=TwoWay}" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Due Date" Style="{StaticResource customlabel}"></Label>
+                    <Entry Text="{Binding taskmodel.duedate, Mode=TwoWay}" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Priority" Style="{StaticResource customlabel}"></Label>
+                    <Entry Text="{Binding taskmodel.priority, Mode=TwoWay}" WidthRequest="200"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Notes" Style="{StaticResource customlabel}"></Label>
+                    <Editor Text="{Binding taskmodel.notes, Mode=TwoWay}" HeightRequest="50"></Editor>
+                </StackLayout>
+                
+                <Button Text="Add to List"  BackgroundColor="Gray" Command="{Binding addtolist}">
+
+                </Button>
+                <Button Text="View My To Do List"  BackgroundColor="LightGray" Command="{Binding viewlist}"><!--Binding DataContext.ChangePage-->
+
+                </Button>
+
+                <Label Text="{Binding message}"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

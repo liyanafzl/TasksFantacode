@@ -1,6 +1,0 @@
-c:\users\liyana fizal\source\repos\Classes\Classes\bin\Debug\Classes.exe.config
-c:\users\liyana fizal\source\repos\Classes\Classes\bin\Debug\Classes.exe
-c:\users\liyana fizal\source\repos\Classes\Classes\bin\Debug\Classes.pdb
-c:\users\liyana fizal\source\repos\Classes\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
-c:\users\liyana fizal\source\repos\Classes\Classes\obj\Debug\Classes.exe
-c:\users\liyana fizal\source\repos\Classes\Classes\obj\Debug\Classes.pdb
