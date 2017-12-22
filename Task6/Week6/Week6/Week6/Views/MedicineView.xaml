@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week6.Views.MedicineView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="customlabel"
+                   TargetType="Label">
+                <Setter Property="WidthRequest"
+                        Value="90"/>
+                <Setter Property="FontSize"
+                        Value="Medium"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                
+                
+                <StackLayout Orientation="Vertical" Padding="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Name " 
+                           Style="{StaticResource customlabel}"></Label>
+                        <Entry Text="{Binding medmodel.mname, Mode=TwoWay}" WidthRequest="200"></Entry>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Dosage" Style="{StaticResource customlabel}"></Label>
+                        <Entry Text="{Binding medmodel.dosage, Mode=TwoWay}" WidthRequest="200"></Entry>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Notes" Style="{StaticResource customlabel}"></Label>
+                        <Entry Text="{Binding medmodel.notes, Mode=TwoWay}" WidthRequest="200"></Entry>
+                    </StackLayout>
+                </StackLayout>
+                <Button Text="Add Medicine" Command="{Binding AddMedicine}"/>
+                <Button Text="View Medicine" Command="{Binding ViewMedicine}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

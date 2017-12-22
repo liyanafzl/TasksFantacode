@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week6.Views.DoctorView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="customlabel"
+                   TargetType="Label">
+                <Setter Property="WidthRequest"
+                        Value="90"/>
+                <Setter Property="FontSize"
+                        Value="Medium"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+
+                <StackLayout Orientation="Vertical" Padding="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Name " 
+                           Style="{StaticResource customlabel}"></Label>
+                        <Entry x:Name="ddname" WidthRequest="200"></Entry>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Date" Style="{StaticResource customlabel}"></Label>
+                        <Entry x:Name="ddate" WidthRequest="200"></Entry>
+                    </StackLayout>
+                </StackLayout>
+                <Button Text="Add Doctor" Clicked="add_doctor"/>
+                <Button Text="View Doctors" Clicked="view_doctor" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

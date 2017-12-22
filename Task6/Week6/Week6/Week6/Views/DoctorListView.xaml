@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week6.Views.DoctorListView">
+    <ListView x:Name="DoctorList" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical" Padding="30">
+                        <Grid BackgroundColor="Lavender" HeightRequest="100" >
+                            <StackLayout Orientation="Vertical" Padding="20">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Name" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding dname}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Date" WidthRequest="60" TextColor="Black"></Label>
+                                    <Label Text="{Binding date}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

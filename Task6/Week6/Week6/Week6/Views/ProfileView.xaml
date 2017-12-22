@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week6.Views.ProfileView">
+   
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="customlabel"
+                   TargetType="Label">
+                <Setter Property="WidthRequest"
+                        Value="90"/>
+                <Setter Property="FontSize"
+                        Value="Medium"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Padding="30">
+        <StackLayout BackgroundColor="Blue">
+            <Label Text="Your Profile"
+                   TextColor="White"
+                   FontSize="Large"
+                   HorizontalOptions="Center"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     Padding="5">
+            <Label Text="Name"
+                   Style="{StaticResource customlabel}"
+                   />
+            <Label Text="{Binding sname}" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     Padding="5">
+            <Label Text="Age"
+                   Style="{StaticResource customlabel}"/>
+            <Label Text="{Binding sage}" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     Padding="5">
+            <Label Text="Gender"
+                   Style="{StaticResource customlabel}"/>
+            <Label Text="{Binding sgender}" FontSize="Medium" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     Padding="5">
+            <Label Text="Height"
+                   Style="{StaticResource customlabel}"/>
+            <Label Text="{Binding sheight}" FontSize="Medium" />
+            
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

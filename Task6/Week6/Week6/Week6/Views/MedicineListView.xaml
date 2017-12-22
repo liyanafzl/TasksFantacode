@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week6.Views.MedicineListView">
+    <ContentPage.Content>
+        <ListView HasUnevenRows="True" ItemsSource="{Binding Mlist}">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="30">
+                            <Grid BackgroundColor="LightYellow" HeightRequest="190">
+                                <StackLayout Orientation="Vertical" Padding="20">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Name" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding mname, Mode=TwoWay}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Dosage" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding dosage,Mode=TwoWay}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Notes" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding notes, Mode=TwoWay}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
