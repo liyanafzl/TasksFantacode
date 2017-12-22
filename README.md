@@ -65,4 +65,20 @@ Convert the To-Do app you created on Week 4 to MVVM pattern.
 
 ###### My Report : [Report_week5](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week5.md)
 
+### Task 6
+
+The task for the next week is here:
+
+1. Alerts, Action Sheets, Menu - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=0wNJqKJMg_s
+<br>https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=jwetxvCP1mo
+
+1. Slider - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=1O7IeHNrKI
+
+1. x:Reference - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=1_DnxuAlRq4
+ 
+
+<br>At the end of this week, start developing full-fledged offline apps.
+
+###### My Report : [Report_week6](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week6.md)
+
 
