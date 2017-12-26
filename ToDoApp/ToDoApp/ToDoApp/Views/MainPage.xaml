@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ToDoApp"
+             x:Class="ToDoApp.MainPage">
+    <StackLayout WidthRequest="300">
+        <StackLayout Orientation="Horizontal" WidthRequest="300">
+            <Label Text="Task Name "></Label>
+            <Entry Text="{Binding task}"></Entry>
+    </StackLayout>
+        <StackLayout Orientation="Horizontal" WidthRequest="300">
+            <Label Text="Task Description "></Label>
+            <Entry Text="{Binding description}"></Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" WidthRequest="300">
+            <Label Text="Done "></Label>
+            <Entry Text="{Binding done}"></Entry>
+        </StackLayout>
+        <Button Text="Add" Command="{Binding AddButton}"></Button>
+
+    </StackLayout>
+</ContentPage>
