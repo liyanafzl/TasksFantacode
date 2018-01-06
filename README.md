@@ -81,4 +81,15 @@ The task for the next week is here:
 
 ###### My Report : [Report_week6](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week6.md)
 
+### Task 7
+
+The task for the next week is here:
+
+1. Switch - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=SxdyYKpnHQI
+1. Progress Bar - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=SxdyYKpnHQI
+1. Toolbar Items - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=qv1X6eB0flw
+1. Stack Panel - https://www.youtube.com/watch?list=PLpbcUe4chE78MmC5yfi0aSPnRj16x7Czl&v=nz7ZxUH-5G0
+
+
+
 
