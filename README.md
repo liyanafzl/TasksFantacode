@@ -90,6 +90,8 @@ Learnt a lot of things but there is a long way to go. Some of the topics we had 
 * Using APIs in Xamarin forms
 * Computer Vision API
 * Bing Speech API
+* Tabbed page
+* Master detail page
 * Carousel view (used in Mercado)
 * 48 hour Hackathon
 ### Task 7
