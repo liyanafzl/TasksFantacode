@@ -81,6 +81,17 @@ The task for the next week is here:
 
 ###### My Report : [Report_week6](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week6.md)
 
+### 10 Days On-Site Internship at Fantacode!
+Learnt a lot of things but there is a long way to go. Some of the topics we had a chance to go through were : <br>
+* Settings plugin
+* Text to speech  
+* Weather Application
+* Geolocator plugin
+* Using APIs in Xamarin forms
+* Computer Vision API
+* Bing Speech API
+* Carousel view (used in Mercado)
+* 48 hour Hackathon
 ### Task 7
 
 The task for the next week is here:
@@ -90,6 +101,6 @@ The task for the next week is here:
 1. Toolbar Items - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=qv1X6eB0flw
 1. Stack Panel - https://www.youtube.com/watch?list=PLpbcUe4chE78MmC5yfi0aSPnRj16x7Czl&v=nz7ZxUH-5G0
 
-
+###### My Report : [Report_week7](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week7.md)
 
 
