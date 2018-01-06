@@ -3,20 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ToDoApp"
              x:Class="ToDoApp.MainPage">
-    <StackLayout WidthRequest="300">
-        <StackLayout Orientation="Horizontal" WidthRequest="300">
-            <Label Text="Task Name "></Label>
-            <Entry Text="{Binding task}"></Entry>
+    <StackLayout >
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Task Name " FontSize="Medium"></Label>
+            <Entry Text="{Binding task}" WidthRequest="200"></Entry>
     </StackLayout>
-        <StackLayout Orientation="Horizontal" WidthRequest="300">
-            <Label Text="Task Description "></Label>
-            <Entry Text="{Binding description}"></Entry>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Task Description " FontSize="Medium"></Label>
+            <Entry Text="{Binding description}" WidthRequest="200"></Entry>
         </StackLayout>
-        <StackLayout Orientation="Horizontal" WidthRequest="300">
-            <Label Text="Done "></Label>
-            <Entry Text="{Binding done}"></Entry>
+        <StackLayout Orientation="Horizontal" WidthRequest="200">
+            <Label Text="Done " FontSize="Medium"></Label>
+            <Switch IsToggled="{Binding done, Mode=TwoWay}" />
         </StackLayout>
+        <StackLayout Orientation="Horizontal">
         <Button Text="Add" Command="{Binding AddButton}"></Button>
-
+        <Button Text="Display" Command="{Binding DisplayButton}"></Button>
+        <Button Text="Delete" Command="{Binding DeleteButton}"></Button>
+        <Button Text="Update" Command="{Binding UpdateButton}"></Button>
+        </StackLayout>
+        <ListView ItemsSource="{Binding List}" HasUnevenRows="True" SelectedItem="{Binding OnSelected, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="30">
+                            <Grid HeightRequest="150" >
+                                <StackLayout Orientation="Vertical" Padding="20">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="ID" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding todoId}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Name" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding task}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Description" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding description}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Date" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding date}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Done" WidthRequest="60" TextColor="Black"></Label>
+                                        <Label Text="{Binding done}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 </ContentPage>

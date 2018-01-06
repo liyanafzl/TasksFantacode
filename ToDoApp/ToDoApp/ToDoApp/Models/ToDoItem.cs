@@ -8,14 +8,14 @@ namespace ToDoApp.Models
  
         public class TodoItem
         {
-            string _todoId;
+            int _todoId;
             string _task;
             string _description;
             DateTime _date;
             bool _done;
 
             [JsonProperty(PropertyName = "todoId")]
-            public string todoId
+            public int todoId
         {
                 get { return _todoId; }
                 set { _todoId = value; }

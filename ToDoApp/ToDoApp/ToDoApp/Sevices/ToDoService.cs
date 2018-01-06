@@ -56,5 +56,36 @@ namespace ToDoApp.Sevices
                 return false;
             }
         }
+        async public Task<bool> UpdateTodo(TodoItem item)
+        {
+            try
+            {
+                var itemtosend = JsonConvert.SerializeObject(item);
+                var content = new StringContent(itemtosend, Encoding.UTF8, "application/json");
+                var result = await httpclient.PutAsync("Todo/" + item.todoId, content);
+                if (result.IsSuccessStatusCode)
+                    return true;
+                return false;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+        async public Task<bool> DeleteToDo(int id)
+        {
+            try
+            {
+               
+                var result = await httpclient.DeleteAsync("Todo/"+ id);
+                if (result.IsSuccessStatusCode)
+                    return true;
+                return false;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
     }
 }
