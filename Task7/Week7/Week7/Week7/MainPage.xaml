@@ -7,7 +7,7 @@
     <StackLayout Padding="30">
         <Button Text="Progress bar" BackgroundColor="Gray" Clicked="ProgressOnClicked"/>
         <Button Text="Toolbar item" BackgroundColor="Gray" Clicked="ToolbarOnClicked"/>
-        <Button Text="Stack Panel" BackgroundColor="Gray"/>
+        <Button Text="Stack Panel" BackgroundColor="Gray" Clicked="StackPanelClicked"/>
         
 
     </StackLayout>

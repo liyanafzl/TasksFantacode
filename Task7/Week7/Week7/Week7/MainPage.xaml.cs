@@ -23,6 +23,10 @@ namespace Week7
         {
             await Navigation.PushAsync(new ToolbarPage());
         }
+        public async void StackPanelClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StackPanelPage());
+        }
 
     }
 }
