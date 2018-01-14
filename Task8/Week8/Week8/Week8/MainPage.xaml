@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Week8"
              x:Class="Week8.MainPage">
-
-    <Button Text="SQLite Database"/>
-    <Button Text="Grid"/>
-    <Button Text="Animation"/>
-    <Button Text="Gesture recognizers"/>
-
+    <StackLayout>
+    <Button Text="SQLite Database" Clicked="SQLOnClicked"/>
+    <Button Text="Grid" Clicked="GridOnClicked"/>
+    <Button Text="Animation" Clicked="AnimationOnClicked"/>
+    <Button Text="Gesture recognizers" Clicked="GestureOnClicked"/>
+    </StackLayout>
 </ContentPage>

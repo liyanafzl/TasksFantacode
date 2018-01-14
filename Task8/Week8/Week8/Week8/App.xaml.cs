@@ -13,7 +13,7 @@ namespace Week8
 		{
 			InitializeComponent();
 
-            MainPage = new SQLiteSamplePage().GetSampleContentPage();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

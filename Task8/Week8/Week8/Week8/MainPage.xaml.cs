@@ -13,5 +13,22 @@ namespace Week8
 		{
 			InitializeComponent();
 		}
-	}
+        public async void SQLOnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SQLiteSamplePage().GetSampleContentPage());
+        }
+        public async void GridOnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GridPage());
+        }
+        public async void AnimationOnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AnimationPage());
+        }
+        public async void GestureOnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GesturePage());
+        }
+
+    }
 }
