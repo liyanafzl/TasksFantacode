@@ -117,4 +117,14 @@ The task for the next week is here:
 
 ###### My Report : [Report_week8](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week8.md)
 
+### Task 9
+
+The task for the next week is here:
+
+1. Search Bar -  https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=hAmcxAmbLcA
+1. ListView Header Template - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=hAmcxAmbLcA
+1. List View Data Template Selector - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=pdsEHEjyR-4
+1. Advanced Xamarin Forms MVVM - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=USn6hgk-tLU
+1. Data Template Selector - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=WByQQwctYgI
+
 
