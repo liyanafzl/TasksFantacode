@@ -105,4 +105,16 @@ The task for the next week is here:
 
 ###### My Report : [Report_week7](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week7.md)
 
+### Task 8
+
+The task for the next week is here:
+
+1. SQLLite - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=nrXmA-0NoOE
+1. Grid Column - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=OljtuytjVXs
+1. Animation - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=DvY6NmcLnaw
+1. Gesture Recognizers - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=jBHU1LKmEMI
+
+
+###### My Report : [Report_week8](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week8.md)
+
 
