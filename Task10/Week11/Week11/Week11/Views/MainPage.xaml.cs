@@ -14,7 +14,7 @@ namespace Week11.Views
 	{
 		public MainPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
             BindingContext = new MainViewModel();
 		}
 	}
