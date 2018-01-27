@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 using Week11.Models;
 using Week11.Services;
 
@@ -26,8 +27,12 @@ namespace Week11.ViewModels
         }
         public MainViewModel()
         {
+            InitializeDataAsync();
+        }
+        public async Task InitializeDataAsync()
+        {
             var employeeServices = new EmployeeServices();
-            EmployeesList = employeeServices.GetEmployees();
+            EmployeesList = await employeeServices.GetEmployeesAsync();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
