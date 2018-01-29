@@ -127,4 +127,5 @@ The task for the next week is here:
 1. Advanced Xamarin Forms MVVM - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=USn6hgk-tLU
 1. Data Template Selector - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=WByQQwctYgI
 
+###### My Report : [Report_week9](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week9.md)
 
