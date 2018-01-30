@@ -7,12 +7,12 @@
 ### Tasks 
 The task for this week is here:<br>
  
-1. Search Bar -  https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=hAmcxAmbLcA
-1. ListView Header Template - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=hAmcxAmbLcA
-1. List View Data Template Selector - https://www.youtube.com/watch?list=PLpbcUe4chE7-5t2mlamz6yB0qzAfO5Yln&v=pdsEHEjyR-4
-1. Advanced Xamarin Forms MVVM - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=USn6hgk-tLU
-1. Data Template Selector - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=WByQQwctYgI
-
+The task for the next week is here:<br>
+1. Connecting to Web Services - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=Lir75oNAeiM
+1. Connecting to Web Services
+   1. POST - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=MPm5aY503pU
+   1. PUT, DELETE - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=9DabKzNq6FI
+   1. SEARCH - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=SyWRGJmrlVs
  
 ### Tasks done:
 
