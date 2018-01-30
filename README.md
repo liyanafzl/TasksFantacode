@@ -129,3 +129,16 @@ The task for the next week is here:
 
 ###### My Report : [Report_week9](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week9.md)
 
+### Task 10
+
+The task for the next week is here:<br>
+1. Connecting to Web Services - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=Lir75oNAeiM
+1. Connecting to Web Services
+   1. POST - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=MPm5aY503pU
+   1. PUT, DELETE - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=9DabKzNq6FI
+   1. SEARCH - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=SyWRGJmrlVs
+
+###### My Report : [Report_week10](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week10.md)
+
+
+
