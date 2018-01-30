@@ -43,7 +43,19 @@ Use the RestClient in EmployeeServices
   ### Point to be noted:
   
   * When specifying the base url in Web API, make sure it ends with a "/"
-  <br> Example : 
+  <br> Example : http://localhost:54631/api/Employees/
+  
+  * We know that '"await" needs to be used with async methods. When an async method need to be used inside a constructor it can be done as follows because constructors cannot be made async.
+   ```
+   public MainViewModel()
+        {
+            InitializeDataAsync();
+        }
+        public async Task InitializeDataAsync()
+        {
+            var employeeServices = new EmployeeServices();
+            EmployeesList = await employeeServices.GetEmployeesAsync();
+        }```
 
   
 
