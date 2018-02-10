@@ -31,7 +31,7 @@ The task for the next week is here:<br>
      ```
      	BindingContext = "{StaticResource MainViewModel}"
 	```
-  * But this method cannot be used in cases where the view model constructor is parameterized. This is where ViewModelLocator is used.
+  * But the above method cannot be used in cases where the view model constructor is parameterized. This is where ViewModelLocator is used.
 	* To use ViewModelLocator , create a new folder named Configuration --> add new class named ViewModelLocator -->make it public -->add a property of type MainViewModel --> in the constructor create an instance of the view model.
 	* In App.xaml, change the code as follows:
 	```
