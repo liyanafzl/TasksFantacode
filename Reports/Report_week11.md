@@ -23,6 +23,8 @@ The task for the next week is here:<br>
        	  <ResourceDictionary>
        	               <ViewModels:MainViewModel x:Key="MainViewModel"/>
        	          </ResourceDictionary>
-	</Application.Resources> 
+	    </Application.Resources>
+	    
+	   ```
      * sdjfksljd
 
