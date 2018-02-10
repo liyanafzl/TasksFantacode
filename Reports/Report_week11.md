@@ -26,5 +26,27 @@ The task for the next week is here:<br>
 	    </Application.Resources>
 	    
 	   ```
-     * sdjfksljd
+     * Add the namespace accordingly. (Here: xmlns:ViewModels="clr-namespace:App1.ViewModels;assembly=App1")
+     * Add the BindingContext in MainPage as well as the other two pages which use the same viewmodel.
+     ```
+     	BindingContext = "{StaticResource MainViewModel}"
+	```
+  * But this method cannot be used in cases where the view model constructor is parameterized. This is where ViewModelLocator is used.
+	* To use ViewModelLocator , create a new folder named Configuration --> add new class named ViewModelLocator -->make it public -->add a property of type MainViewModel --> in the constructor create an instance of the view model.
+	* In App.xaml, change the code as follows:
+	```
+        <Application.Resources>
+       	  <ResourceDictionary>
+       	               <Configuration:ViewModelLocator x:Key="ViewModelLocator"/>
+       	       </ResourceDictionary>
+	    </Application.Resources>
+	    
+	   ```
+	* Change the namespace accordingly.
+	* Add the BindingContext in each of the views as follows;
+	```
+     	BindingContext = "{Binding MainViewModel, Source ={StaticResource ViewModelLocator}"
+	```
+	
+	
 
