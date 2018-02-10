@@ -13,7 +13,7 @@ namespace Plugin.RestClient
     /// </summary>
     public class RestClient<T>
     {
-        private const string WebServiceUrl = "http://localhost:54631/api/Employees/";
+        private const string WebServiceUrl = "http://192.168.1.8:54631/api/Employees/";
 
         public async Task<List<T>> GetAsync()
         {

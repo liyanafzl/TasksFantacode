@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Week11.Models;
 using Plugin.RestClient;
+using Week11.Models;
 
 namespace Week11.Services
 {
