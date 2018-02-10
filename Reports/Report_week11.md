@@ -15,5 +15,6 @@ The task for the next week is here:<br>
 
 * Watched the video tutorials and understood the concept of using Application Resources and ViewModelLocator.
 * Points noted-<br>
-  * Suppose that we are using the same view model for 2 or more views. We would possibly create a new instance of the view model in each of the pages/views. Instead of creating a new instance of the view model each time, we could use Application Resources.(It is something like making a variable global. Thus we would have to define it only once and can be accessed everywhere.) 
+  * Suppose that we are using the same view model for 2 or more views. We would possibly create a new instance of the view model in each of the pages/views. Instead of creating a new instance of the view model each time, we could use Application Resources. (It is something like making a variable global. Thus we would have to define it only once and it can be accessed everywhere.) Therefore to extend the scope of any object to the entire application, it needs to be defined in Application Resources as follows:<br>
+    * hghnkj
 
