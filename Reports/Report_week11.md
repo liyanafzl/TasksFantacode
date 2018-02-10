@@ -22,7 +22,7 @@ The task for the next week is here:<br>
         <Application.Resources>
        	  <ResourceDictionary>
        	               <ViewModels:MainViewModel x:Key="MainViewModel"/>
-       	          </ResourceDictionary>
+       	       </ResourceDictionary>
 	    </Application.Resources>
 	    
 	   ```
