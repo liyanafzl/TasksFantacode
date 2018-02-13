@@ -148,6 +148,30 @@ The task for the next week is here:<br>
     1. Advanced MVVM - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=L6EsshOGmZs
     1. View Model Locator and Application.Resource - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=L6EsshOGmZs
     1. Advanced Xamarin Forms UX - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=WByQQwctYgI
+    
+    ###### My Report : [Report_week11](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week11.md)
+
+### Task 12
+
+The resource for this week is here:<br>
+<b>Dependency Injection (DI)</b>
+* https://developer.xamarin.com/guides/xamarin-forms/enterprise-application-patterns/dependency-injection/
+* https://xamarinhelp.com/xamarin-forms-dependency-injection/
+* https://www.youtube.com/watch?v=YZKaNsIQp8o
+* This article will introduce you to a library and different frameworks that can be used for coding in MVVM Pattern.
+https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
+
+
+Task: Create an application using Prism and implementing DI.
+
+### Task 13
+
+The resource for this week is here:<br>
+
+1. Unit Testing - https://www.youtube.com/watch?list=PLpbcUe4chE79VBVHr5qIi4T_rWa1esCqw&v=lp90llE_9-s
+2. UI Testing - https://www.youtube.com/watch?list=PLpbcUe4chE79VBVHr5qIi4T_rWa1esCqw&v=hRexS3bbbsE
+
+
 
 
 
