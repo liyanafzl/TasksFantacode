@@ -6,12 +6,14 @@
     <StackLayout>
         
     <StackLayout>
-        <Label Text="CUP"
+        <Label Text="{Binding word}"
                    FontSize="Large"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    Margin="0,50,0,0"/>
-            <Image Source="{Binding PhotoImage}"/>
+            <Image Source="{Binding PhotoImage}"
+                   WidthRequest="300"
+                   HeightRequest="300"/>
         </StackLayout>
     <RelativeLayout>
         

@@ -21,16 +21,19 @@ namespace Module13.ViewModels
 
         private async void NextPageAsync()
         {
-            var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions() { PhotoSize = PhotoSize.Medium, CompressionQuality = 60 });
+            var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions() { PhotoSize = PhotoSize.Custom, CustomPhotoSize=45, CompressionQuality = 60 });
             Models.ImageResult res = await _visionAPI.MakeAnalysisRequest(photo.Path);
-            //var parameter = 
+            var parameter = new NavigationParameters();
+            parameter.Add("ImageParam",res);
+            parameter.Add("ImagePath", photo.Path);
+
             //foreach (char i in word)
             //{
             //    string str = i.ToString();
             //    Services.AudioRecService.PlayAudio(str);
             //}
             //Services.AudioRecService.PlayAudio(word);
-            //await _navigationService.NavigateAsync("SpeakPage");
+            await _navigationService.NavigateAsync(new Uri("SpeakPage",UriKind.Relative),parameter);
         }
     }
 }

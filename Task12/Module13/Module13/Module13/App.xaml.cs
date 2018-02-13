@@ -28,7 +28,7 @@ namespace Module13
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<CameraPage, CameraPageViewModel>();
             containerRegistry.RegisterForNavigation<SpeakPage, SpeakPageViewModel>();
-            containerRegistry.RegisterForNavigation<SpeakPage, SpeakPageViewModel>();
+            
             containerRegistry.Register<IVisionAPI, VisionAPIService>();
         }
 
