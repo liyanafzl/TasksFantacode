@@ -168,8 +168,8 @@ Task: Create an application using Prism and implementing DI.
 
 The resource for this week is here:<br>
 
-i.         Unit Testing - https://www.youtube.com/watch?list=PLpbcUe4chE79VBVHr5qIi4T_rWa1esCqw&v=lp90llE_9-s
-ii.         UI Testing - https://www.youtube.com/watch?list=PLpbcUe4chE79VBVHr5qIi4T_rWa1esCqw&v=hRexS3bbbsE
+1. Unit Testing - https://www.youtube.com/watch?list=PLpbcUe4chE79VBVHr5qIi4T_rWa1esCqw&v=lp90llE_9-s
+2. UI Testing - https://www.youtube.com/watch?list=PLpbcUe4chE79VBVHr5qIi4T_rWa1esCqw&v=hRexS3bbbsE
 
 
 
