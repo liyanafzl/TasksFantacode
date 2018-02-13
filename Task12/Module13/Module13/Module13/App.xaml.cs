@@ -30,6 +30,7 @@ namespace Module13
             containerRegistry.RegisterForNavigation<SpeakPage, SpeakPageViewModel>();
             
             containerRegistry.Register<IVisionAPI, VisionAPIService>();
+            containerRegistry.Register<IAudioRecordService, AudioService>();
         }
 
 
