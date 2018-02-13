@@ -148,6 +148,8 @@ The task for the next week is here:<br>
     1. Advanced MVVM - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=L6EsshOGmZs
     1. View Model Locator and Application.Resource - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=L6EsshOGmZs
     1. Advanced Xamarin Forms UX - https://www.youtube.com/watch?list=PLpbcUe4chE7-uGCH1S0-qeuCWOMa2Tmam&v=WByQQwctYgI
+    
+    ###### My Report : [Report_week11](https://github.com/liyanafzl/TasksFantacode/tree/master/Reports/Report_week11.md)
 
 
 
