@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module13.Views.SpeakPage"
+             BackgroundImage="background">
+    <StackLayout>
+        
+    <StackLayout>
+        <Label Text="CUP"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="0,50,0,0"/>
+            <Image Source="{Binding PhotoImage}"/>
+        </StackLayout>
+    <RelativeLayout>
+        
+        <Image     Source="play"
+                   WidthRequest="250"
+                   HeightRequest="250"
+                   HorizontalOptions="Center"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Width,Factor=.9,Constant=650}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Height,Factor=.25,Constant=100}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                        Command="{Binding CameraCommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Image     Source="speak"
+                   WidthRequest="250"
+                   HeightRequest="250"
+                   HorizontalOptions="Center"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Width,Factor=.9,Constant=680}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Height,Factor=.2,Constant=370}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                        Command="{Binding CameraCommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+        
+    </RelativeLayout>
+    </StackLayout>
+</ContentPage>

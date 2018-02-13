@@ -31,8 +31,16 @@ namespace Week11.ViewModels
         }
         public async Task InitializeDataAsync()
         {
+            EmployeesList = new List<Employee>();
+            Employee e = new Employee();
+            e.Name = "testing";
+            e.Department = "Dept";
+            EmployeesList.Add(e);
+            OnPropertyChanged("EmployeesList");
             var employeeServices = new EmployeeServices();
             EmployeesList = await employeeServices.GetEmployeesAsync();
+            OnPropertyChanged("EmployeesList");
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
