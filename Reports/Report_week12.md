@@ -59,6 +59,10 @@ Before registering the services, interfaces were created for each service. (Note
    ```
 1. Uploaded the application on github :<br>https://github.com/liyanafzl/TasksFantacode/tree/master/Task12/Module13
 
-
+### Errors Encountered:
   
+  1. App namespace not found ( in MainActivity.cs and AppDelegate.cs )
+     This error occurred after addind Prism reference in App.xaml.cs
+     <b>Solution </b><br>
+     ![Image](/images/AppError.png)
 
