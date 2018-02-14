@@ -43,20 +43,20 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
 1. In App class inherit from PrismApplication, add the Prism initializer parameter in the constructor and override the OnInitialized and RegisterTypes methods on App.xaml.cs 
 1. Added Platform initializers on iOS AppDelegate.cs and Android MainActivity.cs
 1. Connected Views with View Models:
-```
+   ```
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<CameraPage, CameraPageViewModel>();
             containerRegistry.RegisterForNavigation<SpeakPage, SpeakPageViewModel>();
-```
+   ```
 1. For Navigation from one page to another , used DelegateCommand as in https://channel9.msdn.com/Blogs/MVP-Windows-Dev/Implementing-NavigationService-for-Xamarin-Forms-and-MVVM
 
 1. Registered the services :
 Before registering the services, interfaces were created for each service. (Note: static methods cannot be implemented)
-```
+   ```
             containerRegistry.Register<IVisionAPI, VisionAPIService>();
             containerRegistry.Register<IAudioRecordService, AudioService>();
 
-```
+   ```
 1. Uploaded the application on github :<br>https://github.com/liyanafzl/TasksFantacode/tree/master/Task12/Module13
 
 
