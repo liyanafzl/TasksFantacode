@@ -65,4 +65,15 @@ Before registering the services, interfaces were created for each service. (Note
      This error occurred after addind Prism reference in App.xaml.cs
      <b>Solution </b><br>
      ![Image](/images/AppError.png)
+     
+  1. Application crashed when using Xam.Plugin.Media - CrossTextToSpeech
+     <b>Solution </b><br>
+     It seems there has beenn changes made in the plugin. Thus additional files need to be added according to the new Readme file for 
+     the plugin.
+     ![Image](/images/MediaPluginError.png)
+     
+     After following the above steps, I faced an unhandled exception within MainActivity.OnCreate : Java.Lang.NullPointerException
+     
+     <b>Solution</b><br>
+     ![Image](/images/MediaError2.png)
 
