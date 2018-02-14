@@ -38,7 +38,9 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
 * Steps followed:<br>
   I followed the steps as given in https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
 1. Installed the Prism package : Prism.Unity.Forms <a href="https://www.nuget.org/packages/Prism.Unity.Forms/" rel="nofollow"><img src="https://camo.githubusercontent.com/709fd2a23b7675bb66f11291ffd20e81fdb43f5c/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f767072652f507269736d2e556e6974792e466f726d732e737667" alt="UnityFormsNuGetShield" data-canonical-src="https://img.shields.io/nuget/vpre/Prism.Unity.Forms.svg" style="max-width:100%;"></a>
-1. 
+1. Added the Prism reference xmlns:prism=“clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms“ in App.xaml.cs, and replaced “Application” Root for “PrismApplication”
+1. In App class inherit from PrismApplication, add the Prism initializer parameter in the constructor and override the OnInitialized and RegisterTypes methods on App.xaml.cs 
+1. Added Platform initializers on iOS AppDelegate.cs and Android MainActivity.cs
 
 
   
