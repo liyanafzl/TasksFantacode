@@ -1,6 +1,7 @@
 
 # FantaCode Internship
 # WEEK 12:Report 
+# Module 13 : Dependency Injection
 
 ###### Date: 14/02/2018
 ### Tasks 
@@ -17,7 +18,7 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
 <b>Task</b> : Create an application using Prism and implementing DI.
 ### Tasks done:
 
-* Read the documentation given above on Dependency Injection. Watched the video tutorial of Houssem Dellai using Prism. The blog by xamgirl was pretty easy and could understand better.
+* Read the documentation given above on Dependency Injection. Watched the video tutorial of Houssem Dellai using Prism. The blog written by xamgirl is pretty to understand.
 * To get a better idea, I went forward to refer other sources and found the below quite useful:<br>
 
   <b>Prism for Xamarin Forms</b>
@@ -62,11 +63,11 @@ Before registering the services, interfaces were created for each service. (Note
 ### Errors Encountered:
   
   1. App namespace not found ( in MainActivity.cs and AppDelegate.cs )
-     This error occurred after addind Prism reference in App.xaml.cs
+     This error occurred after addind Prism reference in App.xaml.cs<br>
      <b>Solution </b><br>
      ![Image](/images/AppError.png)
      
-  1. Application crashed when using Xam.Plugin.Media - CrossTextToSpeech
+  1. Application crashed when using Xam.Plugin.Media<br>
      <b>Solution </b><br>
      It seems there has beenn changes made in the plugin. Thus additional files need to be added according to the new Readme file for 
      the plugin.
