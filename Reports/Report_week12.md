@@ -69,8 +69,7 @@ Before registering the services, interfaces were created for each service. (Note
      
   1. Application crashed when using Xam.Plugin.Media<br>
      <b>Solution </b><br>
-     It seems there has beenn changes made in the plugin. Thus additional files need to be added according to the new Readme file for 
-     the plugin.
+     It seems that there has been changes made in the plugin. Thus additional files need to be added according to the new Readme file        for the plugin.
      ![Image](/images/MediaPluginError.png)
      
      After following the above steps, I faced an unhandled exception within MainActivity.OnCreate : Java.Lang.NullPointerException
