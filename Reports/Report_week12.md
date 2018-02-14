@@ -20,15 +20,15 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
 * Read the documentation given above on Dependency Injection. Watched the video tutorial of Houssem Dellai using Prism. The blog by xamgirl was pretty easy and could understand better.
 * To get a better idea, I went forward to refer other sources and found the below quite useful:<br>
 
-  <b>Prism for Xamarin Forms<b>
+  <b>Prism for Xamarin Forms</b>
    <br>https://dzone.com/articles/prism-for-xamarin-forms-an-overview-part-1
 <br>https://dzone.com/articles/prism-for-xamarin-forms-part-2-basic-navigation-an
 <br>https://dzone.com/articles/prism-for-xamarin-forms-part-3-advanced-navigation?fromrel=true<br>
   
-  <b>Implementing NavigationService for Xamarin Forms and MVVM ( by Houssem Dellai )<b>
+  <b>Implementing NavigationService for Xamarin Forms and MVVM ( by Houssem Dellai )</b>
   <br>https://channel9.msdn.com/Blogs/MVP-Windows-Dev/Implementing-NavigationService-for-Xamarin-Forms-and-MVVM
   
-  <b>The Xamarin Show: Prism for Xamarin.Forms with Brian Lagunas and James Montemagno<b>
+  <b>The Xamarin Show: Prism for Xamarin.Forms with Brian Lagunas and James Montemagno</b>
   <br>https://channel9.msdn.com/Shows/XamarinShow/Prism-for-XamarinForms-with-Brian-Lagunas
 * Points noted:<br>
   - Prism is a framework which embraces best coding practices to develop loosely coupled, maintainable, and testable applications.
