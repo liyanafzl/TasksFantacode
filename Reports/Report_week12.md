@@ -37,7 +37,7 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
     It’s common to use DI container frameworks to simplify object creation. These frameworks are available as nuget packages like             Ninject, Autofac, TinyIoc, StructureMap. Here I have used Unity in my application.
 * Steps followed:<br>
   I followed the steps as given in https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
-1. Installed the Prism package : Prism.Unity.Forms <img src="https://camo.githubusercontent.com/d058cbbfae2bb63cd7e46efd0e6edb49c160cfda/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f58616d2e506c7567696e2e4d656469612e7376673f6c6162656c3d4e75476574" alt="NuGet" data-canonical-src="https://img.shields.io/nuget/v/Xam.Plugin.Media.svg?label=NuGet" style="max-width:100%;">
+1. Installed the Prism package : Prism.Unity.Forms <a href="https://www.nuget.org/packages/Xam.Plugin.Media/" rel="nofollow"><img src="https://camo.githubusercontent.com/d058cbbfae2bb63cd7e46efd0e6edb49c160cfda/68747470733a2f2f696d672e736869656c64732e696f2f6e756765742f762f58616d2e506c7567696e2e4d656469612e7376673f6c6162656c3d4e75476574" alt="NuGet" data-canonical-src="https://img.shields.io/nuget/v/Xam.Plugin.Media.svg?label=NuGet" style="max-width:100%;"></a>
 1. 
 
 
