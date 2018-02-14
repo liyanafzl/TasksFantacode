@@ -48,7 +48,7 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
             containerRegistry.RegisterForNavigation<CameraPage, CameraPageViewModel>();
             containerRegistry.RegisterForNavigation<SpeakPage, SpeakPageViewModel>();
    ```
-1. For Navigation from one page to another , used DelegateCommand as in https://channel9.msdn.com/Blogs/MVP-Windows-Dev/Implementing-NavigationService-for-Xamarin-Forms-and-MVVM
+1. For Navigation from one page to another , used DelegateCommand as in:<br> https://channel9.msdn.com/Blogs/MVP-Windows-Dev/Implementing-NavigationService-for-Xamarin-Forms-and-MVVM
 
 1. Registered the services :
 Before registering the services, interfaces were created for each service. (Note: static methods cannot be implemented)
