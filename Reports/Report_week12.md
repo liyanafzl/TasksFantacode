@@ -18,7 +18,7 @@ https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
 <b>Task</b> : Create an application using Prism and implementing DI.
 ### Tasks done:
 
-* Read the documentation given above on Dependency Injection. Watched the video tutorial of Houssem Dellai using Prism. The blog written by xamgirl is pretty to understand.
+* Read the documentation given above on Dependency Injection. Watched the video tutorial of Houssem Dellai using Prism. The blog written by xamgirl is pretty easy to understand.
 * To get a better idea, I went forward to refer other sources and found the below quite useful:<br>
 
   <b>Prism for Xamarin Forms</b>
