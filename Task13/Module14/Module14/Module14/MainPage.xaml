@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Module14"
+             
+             x:Class="Module14.MainPage">
+
+    
+    <StackLayout Orientation="Vertical">
+        <Entry FontSize="Medium"
+               Text="{Binding ValA}"
+               />
+        <Entry FontSize="Medium"
+               Text="{Binding ValB}"
+               />
+        <Button Text="Add"
+                Command="{Binding AddCommand}"
+                />
+        <Button Text="Multiply"
+                Command="{Binding MultiplyCommand}"
+                />
+        <Label Text="{Binding Result}"/>
+
+    </StackLayout>
+</ContentPage>
