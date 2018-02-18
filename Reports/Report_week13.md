@@ -27,6 +27,8 @@ The resource for this week is here:<br>
 * After following the same steps as given in the video, I was unable to unit test the project. It always showed an exception:<br>
   <b>Message: Test method UnitTestApp.UnitTest.MathUnitTest.AddTest threw exception: 
   System.IO.FileNotFoundException: Could not load file or assembly 'Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral,       PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.</b>
+  
+  ![Error](/images/Error13.1.png)
   <br> Solution:
   I tried to build, clean and rebuild the projects but was to no avail. Then I installed the nuget package Xamarin.Forms for the particular unit test project (the same version that was installed for the .Net Shared Project ). Re-built the project and when I ran the unit tests, it worked perfectly well.
   
