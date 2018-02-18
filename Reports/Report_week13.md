@@ -14,11 +14,11 @@ The resource for this week is here:<br>
 
 * Watched the video tutorials of Houssem Dellai. Understood the importance of using MVVM pattern in Unit testing.
 * Created an application as in the video and tried unit testing.
- - Created a Xmarin Forms project .
- - Added the View Models folder and set the binding context to the corresponding views.
- - Created another folder for unit tests and added a new project( Right click Solutions folder - Add new Project - Visual C# -Test - Unit     Test Project - named it UnitTestProject)
- - Defined the UnitTest class and its unit test methods.
- - Tested the application successfully.
+   - Created a Xamarin Forms project .
+   - Added the View Models folder and set the binding context to the corresponding views.
+   - Created another folder for unit tests and added a new project( Right click Solutions folder - Add new Project - Visual C# -Test -   Unit     Test Project - named it UnitTestProject)
+    - Defined the UnitTest class and its unit test methods.
+    - Tested the application successfully.
 * Uploaded the application in github:<br>
   https://github.com/liyanafzl/TasksFantacode/tree/master/Task13/Module14
   
