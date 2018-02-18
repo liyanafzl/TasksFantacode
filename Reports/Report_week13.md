@@ -32,6 +32,9 @@ The resource for this week is here:<br>
   <br> Solution:
   I tried to build, clean and rebuild the projects but was to no avail. Then I installed the nuget package Xamarin.Forms for the particular unit test project (the same version that was installed for the .Net Shared Project ). Re-built the project and when I ran the unit tests, it worked perfectly well.
   
+    ![Error](/images/Error13.2.png)
+
+  
 
 
 
