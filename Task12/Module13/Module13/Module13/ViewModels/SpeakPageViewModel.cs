@@ -1,4 +1,5 @@
 ﻿using Module13.Models;
+using Module13.Services;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -7,13 +8,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Module13.ViewModels
 {
     public class SpeakPageViewModel : BindableBase, INavigatedAware
     {
         INavigationService _navigationService;
-        private readonly IAudioRecordService _audioRecordService;
+        private  IAudioRecordService _audioRecordService;
+        private ISpeechService _speechService;
+
         public DelegateCommand PlayCommand { get; private set; }
         public DelegateCommand SpeakCommand { get; private set; }
         private string photoImage;
@@ -53,17 +58,28 @@ namespace Module13.ViewModels
 
             }
         }
-        public SpeakPageViewModel(INavigationService navigationService, IAudioRecordService audioRecordService)
+        private string hears;
+        public string hear
         {
+            get { return hears; }
+            set
+            {
+                SetProperty(ref hears, value);
+
+            }
+        }
+        public SpeakPageViewModel(INavigationService navigationService, IAudioRecordService audioRecordService, ISpeechService speechService)
+        {
+
             _audioRecordService = audioRecordService;
             _navigationService = navigationService;
+            _speechService = speechService;
             PlayCommand = new DelegateCommand(OnPlay);
             SpeakCommand = new DelegateCommand(ToSpeak);
         }
 
         private async void OnPlay()
         {
-            
             foreach (char i in word)
             {
                 string str = i.ToString();
@@ -73,12 +89,33 @@ namespace Module13.ViewModels
         }
         private async void ToSpeak()
         {
+            
+            String record =  await _audioRecordService.RecordAudio();
+            //Device.StartTimer(TimeSpan.FromSeconds(1), TimeElapsed);
+            //hear = hear.Replace(" ", String.Empty);
+            hear = await _speechService.RecognizeSpeechAsync(record);
 
-           string speech =  await _audioRecordService.RecordAudio();
-            await _audioRecordService.PlayAudio(speech);
-            if (speech==word)
+            //await Task.Delay(500);
+            if (record != null)
             {
-                await _audioRecordService.PlayAudio("Well Done");
+               // hear = await _speechService.RecognizeSpeechAsync(record);
+                if(hear != null)
+                {
+                    await _audioRecordService.PlayAudio(hear);
+                }
+                else
+                {
+                    await _audioRecordService.PlayAudio("Please try again");
+                }
+
+                if (hear == word)
+                {
+                    await _audioRecordService.PlayAudio("Well Done");
+                }
+                else
+                {
+                    await _audioRecordService.PlayAudio("Incorrect. Please try again");
+                }
             }
         }
 

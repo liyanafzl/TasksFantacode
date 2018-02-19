@@ -8,6 +8,7 @@
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="Microsoft.ProjectOxford.Vision" Version="1.0.393" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="PCLStorage" Version="1.0.2" />
     <PackageReference Include="Plugin.AudioRecorder" Version="0.8.0" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.396" />
     <PackageReference Include="Xam.Plugin.Media" Version="3.1.3" />

@@ -19,8 +19,7 @@
                    HeightRequest="300"/>
         </StackLayout>
         <Image     Source="play"
-                   WidthRequest="250"
-                   HeightRequest="250"
+                   
                    HorizontalOptions="Center"
                    RelativeLayout.HeightConstraint="{ConstraintExpression
                    Type=RelativeToParent,Property=Width,Factor=.9,Constant=650}"
@@ -32,8 +31,7 @@
             </Image.GestureRecognizers>
         </Image>
         <Image     Source="speak"
-                   WidthRequest="250"
-                   HeightRequest="250"
+            
                    HorizontalOptions="Center"
                    RelativeLayout.HeightConstraint="{ConstraintExpression
                    Type=RelativeToParent,Property=Width,Factor=.9,Constant=680}"

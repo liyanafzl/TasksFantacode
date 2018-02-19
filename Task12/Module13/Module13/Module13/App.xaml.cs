@@ -31,6 +31,8 @@ namespace Module13
             
             containerRegistry.Register<IVisionAPI, VisionAPIService>();
             containerRegistry.Register<IAudioRecordService, AudioService>();
+            containerRegistry.Register<ISpeechService, SpeechService>();
+
         }
 
 
