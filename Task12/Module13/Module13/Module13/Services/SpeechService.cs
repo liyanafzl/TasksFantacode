@@ -17,7 +17,7 @@ namespace Module13.Services
         public static readonly string SpeechRecognitionEndpoint = "https://speech.platform.bing.com/recognize";
         public static readonly string AuthenticationTokenEndpoint = "https://api.cognitive.microsoft.com/sts/v1.0";
 
-        public static readonly string API_KEY = "fced1b7790b248a3800a434aa0ae4b25";
+        public static readonly string API_KEY = "0e75c9485f544f1a821d08c91425cc66";
         public static string Token = String.Empty;
 
         public async  Task<string> FetchTokenAsync(string fetchUri, string apiKey)
