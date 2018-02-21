@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Module13.Views.SpeakPage"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              BackgroundImage="background">
     
         
     
-    <RelativeLayout>
+    <!--<RelativeLayout>
         <StackLayout
             Margin="40,0,0,0">
             <Label Text="{Binding word}"
@@ -15,6 +16,7 @@
                    VerticalOptions="Center"
                    Margin="0,45,0,0"/>
             <Image Source="{Binding PhotoImage}"
+                  
                    WidthRequest="300"
                    HeightRequest="300"/>
         </StackLayout>
@@ -43,6 +45,62 @@
             </Image.GestureRecognizers>
         </Image>
         
+    </RelativeLayout>-->
+
+    <RelativeLayout>
+        
+            <Image Source="box"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Width,Factor=.7}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Height,Factor=.7}"/>
+        
+        <Label     Text="{Binding word}"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="0,45,0,0"/>
+        <Grid Margin="70,40,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding PhotoImage}"
+                Grid.Row="0"
+               Aspect="AspectFill"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Width,Factor=.5}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Height,Factor=.5}"/>
+        </Grid>
+        <StackLayout Orientation="Horizontal"
+                     Margin="80,5,0,0"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Width,Factor=.5,Constant=700}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression
+                   Type=RelativeToParent,Property=Height,Factor=.5}">
+            <Image Source="play"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   Margin="0,90,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding PlayCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="speak"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                    Margin="10,90,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding SpeakCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+    </StackLayout>
+
     </RelativeLayout>
- 
+
 </ContentPage>

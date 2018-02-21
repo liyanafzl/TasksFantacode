@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module13.Views.ResultPage"
+             BackgroundImage="background">
+
+    <ContentPage.Content>
+
+    <StackLayout>
+        
+     <Label Text="{Binding word}"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="0,45,0,0"/>
+            <Image Source="{Binding PhotoImage}"
+                   />
+        
+        <Image     
+            Source="play"
+            HeightRequest="90"
+            WidthRequest="90">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                        Command="{Binding PlayCommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Image     Source="speak">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                        Command="{Binding SpeakCommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

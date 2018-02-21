@@ -5,7 +5,7 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
-	<application android:label="Module13.Android">
+	<application android:label="Bubbles">
 		<provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.Module13.fileprovider" android:exported="false" android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
 		</provider>

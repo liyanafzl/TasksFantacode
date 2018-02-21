@@ -10,10 +10,11 @@ using Prism;
 using Prism.Ioc;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
+using Lottie.Forms.Droid;
 
 namespace Module13.Droid
 {
-    [Activity(Label = "Module13", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Bubbles", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -24,6 +25,7 @@ namespace Module13.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            AnimationViewRenderer.Init();
             LoadApplication(new App(new AndroidInitializer()));
         }
         public class AndroidInitializer : IPlatformInitializer

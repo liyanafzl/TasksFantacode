@@ -9,19 +9,21 @@ using Xamarin.Forms;
 
 namespace Module13.ViewModels
 {
-    public class MainPageViewModel
+    public class MainPageViewModel 
     {
         INavigationService _navigationService;
         public DelegateCommand PlayCommand { get; private set; }
         public MainPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            PlayCommand = new DelegateCommand(NextPageAsync);
+            PlayCommand= new DelegateCommand(NextPageAsync);
         }
 
         private async  void   NextPageAsync()
         {
+           
             await _navigationService.NavigateAsync("CameraPage");
         }
+        
     }
 }

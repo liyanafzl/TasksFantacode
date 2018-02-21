@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Module13.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CameraPage : ContentPage
+	public partial class ResultPage : ContentPage
 	{
-		public CameraPage ()
+		public ResultPage ()
 		{
 			InitializeComponent ();
-           
 		}
 	}
 }

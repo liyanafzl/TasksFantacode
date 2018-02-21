@@ -91,14 +91,12 @@ namespace Module13.ViewModels
         {
             
             String record =  await _audioRecordService.RecordAudio();
-            //Device.StartTimer(TimeSpan.FromSeconds(1), TimeElapsed);
-            //hear = hear.Replace(" ", String.Empty);
             hear = await _speechService.RecognizeSpeechAsync(record);
 
             //await Task.Delay(500);
             if (record != null)
             {
-               // hear = await _speechService.RecognizeSpeechAsync(record);
+               
                 if(hear != null)
                 {
                     await _audioRecordService.PlayAudio(hear);

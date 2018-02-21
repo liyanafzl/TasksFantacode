@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using Prism;
 using Prism.Ioc;
 using UIKit;
@@ -20,6 +21,8 @@ namespace Module13.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            AnimationViewRenderer.Init();
+
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
