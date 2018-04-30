@@ -16,6 +16,7 @@ namespace Module13.ViewModels
         public CameraPageViewModel(INavigationService navigationService, IVisionAPI visionAPI)
         {
             ButtonVisibility = true;
+            TextVisibility = true;
             AnimationVisibility = false;
             _visionAPI = visionAPI;
             _navigationService = navigationService;
@@ -45,6 +46,18 @@ namespace Module13.ViewModels
                 SetProperty(ref _ButtonVisibility, value);
             }
         }
+        private bool _TextVisibility;
+        public bool TextVisibility
+        {
+            get
+            {
+                return _TextVisibility;
+            }
+            set
+            {
+                SetProperty(ref _TextVisibility, value);
+            }
+        }
 
         private async void NextPageAsync()
         {
@@ -52,6 +65,7 @@ namespace Module13.ViewModels
             var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions() { PhotoSize = PhotoSize.Custom, CustomPhotoSize=45, CompressionQuality = 60 });
            
             ButtonVisibility = false;
+            TextVisibility = false;
             AnimationVisibility = true;
             Models.ImageResult res = await _visionAPI.MakeAnalysisRequest(photo.Path);
             AnimationVisibility = false;

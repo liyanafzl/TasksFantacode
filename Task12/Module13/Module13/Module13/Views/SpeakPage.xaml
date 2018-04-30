@@ -50,10 +50,11 @@
     <RelativeLayout>
         
             <Image Source="box"
+                   Margin="-20,30,0,0"
                    RelativeLayout.HeightConstraint="{ConstraintExpression
                    Type=RelativeToParent,Property=Width,Factor=.7}"
                    RelativeLayout.WidthConstraint="{ConstraintExpression
-                   Type=RelativeToParent,Property=Height,Factor=.7}"/>
+                   Type=RelativeToParent,Property=Height,Factor=.7,Constant=-40}"/>
         
         <Label     Text="{Binding word}"
                    FontSize="Large"

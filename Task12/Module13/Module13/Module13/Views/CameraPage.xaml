@@ -3,16 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Module13.Views.CameraPage"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
-             BackgroundImage="bubble1">
+             BackgroundImage="bubble11">
     <RelativeLayout>
         <forms:AnimationView 
-            Margin="50,70,0,0"
+            Margin="50,100,0,0"
             IsVisible="{Binding AnimationVisibility}"
                 Animation="loading1.json" 
                 AutoPlay="True" Loop="true"
-            
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" />
+        <Label Text="Click a picture and learn!"
+               FontSize="Medium"
+               Margin="50,70,0,0"
+               IsVisible="{Binding TextVisibility}"/>
         <Image     Source="camera"
                    IsVisible="{Binding ButtonVisibility}"
                    WidthRequest="85"
